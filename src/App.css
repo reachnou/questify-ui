@@ -1,0 +1,74 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    /* background: #4CCD99; */
+    background: #ffffff;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(
+      to right,
+      #4CCD99,
+      rgba(80, 139, 252, 1)
+    ); */
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(
+      to right,
+      #4CCD99,
+      rgba(80, 139, 252, 1)
+    ); */
+  }
+  
+  .mask-custom {
+    background: #4CCD99;
+    border-radius: 2em;
+    backdrop-filter: blur(25px);
+    /* border: 2px solid #FFC700; */
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  }
+
+  #list1 .form-control {
+    border-color: transparent;
+  }
+  #list1 .form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+  }
+  #list1 .select-input.form-control[readonly]:not([disabled]) {
+    background-color: #fbfbfb;
+  }
+
+  .hover-card {
+    transition: transform 0.3s;
+  }
+  
+  .hover-card:hover {
+    transform: scale(1.02); /* Increase scale on hover for a zoom effect */
+  }
+
+  .hide-update {
+    display: none; /* Hide delete button by default */
+  }
+  
+  .hover-card:hover .hide-update{
+    display: block; /* Display delete button on hover */
+  }
+
+
+
+
+  .hover-answer-card {
+    transition: transform 0.3s;
+  }
+  
+  .hover-answer-card:hover {
+    transform: scale(1.02); /* Increase scale on hover for a zoom effect */
+  }
+  
+  .delete-button {
+    display: none; /* Hide delete button by default */
+  }
+  
+  .hover-answer-card:hover .delete-button {
+    display: block; /* Display delete button on hover */
+  }

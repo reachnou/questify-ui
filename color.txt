@@ -1,0 +1,62 @@
+primary #007F73
+second #4CCD99
+third #FFC700
+fourth #FFF455
+
+
+<form onSubmit={handleSubmit}>
+      <h1>Create To-Do List</h1>
+      <label>
+        Name:
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+      </label>
+      <br />
+      <label>
+        Description:
+        <textarea
+          name="description"
+          value={formData.description}
+          onChange={handleChange}
+          required
+        />
+      </label>
+      <br />
+      <label>
+        Due Date:
+        <input
+          type="datetime-local"
+          name="dueDate"
+          value={formData.dueDate}
+          onChange={handleChange}
+          required
+        />
+      </label>
+      <br />
+      <label>
+        Priority:
+        <select name="priority" value={formData.priority} onChange={handleChange} required>
+          <option value="">Select Priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+      <br />
+      {/* <label>
+        Status:
+        <select name="status" value={formData.status} onChange={handleChange} required>
+          <option value="">Select Status</option>
+          <option value="todo">To Do</option>
+          <option value="inProgress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+      </label>
+      <br /> */}
+      <button type="submit">Create To-Do</button>
+    </form>
