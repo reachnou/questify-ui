@@ -2,7 +2,7 @@ import axios from "axios";
 import { header } from "./header";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:8080/questify/api/v1",
+    baseURL: "https://questify-api.azurewebsites.net/questify/api/v1",
     timeout: 10000,
     headers: header()
 });
